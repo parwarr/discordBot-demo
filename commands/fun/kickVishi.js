@@ -2,7 +2,7 @@ const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('vishi')
+        .setName('kickvishi')
         .addUserOption(option => option.setName('user').setDescription('The user to kick'))
         .setDescription('Kick Vishi!'),
         async disconnectUser(userID, interaction){

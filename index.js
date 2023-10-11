@@ -36,5 +36,18 @@ for (const file of eventFiles) {
 	}
 }
 
+async function simulateOfflineAndOnline() {
+	// Log the bot out (offline)
+	await client.destroy();
+	console.log('Bot is offline.');
+  
+	// Log the bot back in (online)
+	await client.login(token);
+	console.log('Bot is online.');
+  }
 
-client.login(token);
+
+  simulateOfflineAndOnline();
+// client.login(token);
+
+
